@@ -6,8 +6,10 @@ public class Producto {
     }
 
     public void setProduct (double cantidad){
-        this.cantidad = cantidad;
 
+        if (cantidad >= 0){
+            this.cantidad = cantidad;
+        }
     }
 }
 
